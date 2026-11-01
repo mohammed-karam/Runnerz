@@ -1,0 +1,4 @@
+### Delete a run
+DELETE http://localhost:8080/api/runs/delete/1
+
+###

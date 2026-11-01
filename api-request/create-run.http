@@ -1,0 +1,12 @@
+### Post request to add a runner
+POST http://localhost:8080/api/runs
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "Friday",
+  "startTime": "2026-10-31T14:44:29.7854556",
+  "completedOn": "2026-11-01T15:14:29.7854556",
+  "miles": 3,
+  "location": "INDOOR"
+}
