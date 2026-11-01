@@ -7,6 +7,3 @@ CREATE TABLE IF NOT EXISTS Run (
     location VARCHAR(10) NOT NULL,
     PRIMARY KEY (id)
 );
-
-INSERT INTO Run (id, title, start_time, completed_on, miles, location)
-VALUES (1, 'Morning Run', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 5, 'INDOOR');

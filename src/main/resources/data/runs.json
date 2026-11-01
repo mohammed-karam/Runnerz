@@ -1,0 +1,12 @@
+{
+  "runs": [
+    { "id": 1, "title": "Noon Run", "startTime": "2024-02-20T06:05:00", "completedOn": "2024-02-20T10:27:00", "miles": 24, "location": "INDOOR" },
+    { "id": 2, "title": "Afternoon Run", "startTime": "2024-02-22T12:16:00", "completedOn": "2024-02-22T14:27:00", "miles": 6, "location": "OUTDOOR" },
+    { "id": 3, "title": "Dawn Run", "startTime": "2024-03-06T19:47:00", "completedOn": "2024-03-06T22:06:00", "miles": 19, "location": "INDOOR" },
+    { "id": 4, "title": "Sunset Jog", "startTime": "2024-03-31T08:32:00", "completedOn": "2024-03-31T12:57:00", "miles": 7, "location": "OUTDOOR" },
+    { "id": 5, "title": "Evening Run", "startTime": "2024-04-12T17:30:00", "completedOn": "2024-04-12T18:45:00", "miles": 5, "location": "OUTDOOR" },
+    { "id": 6, "title": "Treadmill Session", "startTime": "2024-04-18T06:00:00", "completedOn": "2024-04-18T07:10:00", "miles": 8, "location": "INDOOR" },
+    { "id": 7, "title": "Long Weekend Run", "startTime": "2024-05-04T07:15:00", "completedOn": "2024-05-04T10:40:00", "miles": 15, "location": "OUTDOOR" },
+    { "id": 8, "title": "Recovery Jog", "startTime": "2024-05-09T20:05:00", "completedOn": "2024-05-09T20:50:00", "miles": 3, "location": "INDOOR" }
+  ]
+}

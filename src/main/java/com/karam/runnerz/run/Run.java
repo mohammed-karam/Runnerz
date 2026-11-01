@@ -19,7 +19,7 @@ public record Run(
         Location location
 ) {
     public Run {
-        if (completedOn.isBefore(LocalDateTime.now())) {
+        if (!completedOn.isAfter(startTime)) {
             throw new IllegalArgumentException("completedOn can't be before start time " + LocalDateTime.now());
         }
     }
