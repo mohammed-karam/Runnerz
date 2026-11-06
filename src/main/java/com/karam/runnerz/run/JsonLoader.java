@@ -1,8 +1,8 @@
 package com.karam.runnerz.run;
 
-import aj.org.objectweb.asm.TypeReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.aot.hint.TypeReference;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import tools.jackson.databind.json.JsonMapper;
@@ -28,7 +28,7 @@ public class JsonLoader implements CommandLineRunner {
             try (InputStream in = TypeReference.class.getResourceAsStream("/data/runs.json")) {
                 Runs allRuns = jsonMapper.readValue(in, Runs.class);
                 log.info("Reading {} runs from JSON data", allRuns.runs().size());
-                allRuns.runs().forEach(runRepository::create);
+                runRepository.saveAll(allRuns.runs());
             }
         } else {
             log.info("Not loading runs from JSON because the collection contains data.");
